@@ -1,0 +1,17 @@
+package com.example.androidproject.model
+
+import android.os.Parcelable
+import kotlinx.android.parcel.Parcelize
+
+@Parcelize
+class User (
+    val id: String = "",
+    val firstName: String = "",
+    val lastName: String = "",
+    val email: String = "",
+    val image: String = "",
+    val mobile: Long = 0,
+    val gender: String = "",
+    val profileCompleted: Boolean = false
+
+): Parcelable

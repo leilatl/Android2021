@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    >
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+
+
+        >
+
+
+    </androidx.appcompat.widget.Toolbar>
+    <FrameLayout
+        android:id="@+id/fl_user_image"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/iv_user_photo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/ic_baseline_person_24"
+            android:background="@drawable/white_btn"
+            />
+
+
+    </FrameLayout>
+    <EditText
+        android:id="@+id/profile_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:hint="First Name"
+        android:padding="10dp"
+        android:background="@drawable/et_style"
+        android:textColorHint="@android:color/darker_gray"
+        android:textColor="@android:color/darker_gray"
+        />
+    <EditText
+        android:id="@+id/profile_surname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:hint="Last Name"
+        android:padding="10dp"
+        android:background="@drawable/et_style"
+        android:textColorHint="@android:color/darker_gray"
+        android:textColor="@android:color/darker_gray"
+        />
+    <EditText
+        android:id="@+id/profile_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:hint="Email"
+        android:padding="10dp"
+        android:background="@drawable/et_style"
+        android:textColorHint="@android:color/darker_gray"
+        android:textColor="@android:color/darker_gray"
+        />
+    <EditText
+        android:id="@+id/profile_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:hint="Phone number"
+        android:padding="10dp"
+        android:background="@drawable/et_style"
+        android:textColorHint="@android:color/darker_gray"
+        android:textColor="@android:color/darker_gray"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btn_male"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:text="MALE"
+            android:textColor="@android:color/white"
+            android:background="@drawable/btn_style"
+            android:layout_margin="10dp"
+            />
+        <Button
+            android:id="@+id/btn_female"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:text="FEMALE"
+            android:textColor="@color/colorPrimary"
+            android:background="@drawable/white_btn"
+            android:layout_margin="10dp"
+            />
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SAVE"
+        android:textColor="@android:color/white"
+        android:background="@drawable/btn_style"
+        android:layout_margin="10dp"
+        />
+
+</LinearLayout>
